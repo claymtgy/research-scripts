@@ -10,3 +10,7 @@ number_list = []
 for i in range(selected_number):
     number_list.append(random.randint(0, selected_range))
 print(number_list)
+
+with open('random.numbers.txt', 'w') as f:
+    f.write(str(number_list))
+    f.close()
